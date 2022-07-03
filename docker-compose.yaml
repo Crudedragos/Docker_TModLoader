@@ -7,8 +7,8 @@ services:
     ports:
       - '7777:7777'
     environment:
-      - TERRARIA_VER=1353
-      - TMOD_VER=0.11.8
+      - TERRARIA_VER=1436
+      - TMOD_VER=2022.06.96.4
       - MODS=TMOD
     volumes:
       - ./terraria:/terraria
