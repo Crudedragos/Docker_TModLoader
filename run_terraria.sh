@@ -20,15 +20,15 @@ installTmod(){
     echo ""
     echo "tModLoader:"
     echo "Downlaoding..." 
-    wget -q https://github.com/tModLoader/tModLoader/releases/download/v$TMOD_VER/tModLoader.Linux.v$TMOD_VER.zip
+    wget -q https://github.com/tModLoader/tModLoader/releases/download/v$TMOD_VER/tModLoader.zip
     echo "Extracting..."
-    unzip -o -qq tModLoader.Linux.v$TMOD_VER.zip -d ./
+    unzip -o -qq tModLoader.zip -d ./
     echo "Preparing files..."
     echo "Updating permissions..."
     chmod u+x tModLoaderServer*
     chmod +x ./launcher
     echo "Cleaning..."
-    rm tModLoader.Linux.v$TMOD_VER.zip
+    rm tModLoader.zip
     echo "Done"
 }
 
